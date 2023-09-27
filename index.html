@@ -15,41 +15,49 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container card">
-      <h1>World Clocks</h1>
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Select a city...</option>
-        <option value="1">New York</option>
-        <option value="2">London</option>
-        <option value="3">Moscow</option>
-        <option value="4">Tokyo</option>
-        <option value="5">Current time</option>
-      </select>
-      <div class="city">
-        <h3>New York</h3>
-        <div class="date">August 15th 2022</div>
-        <div class="time">1:48:15 AM</div>
+    <div class="container">
+      <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+        <h1>World Clocks</h1>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Select a city...</option>
+          <option value="1">New York</option>
+          <option value="2">London</option>
+          <option value="3">Moscow</option>
+          <option value="4">Tokyo</option>
+          <option value="5">Current time</option>
+        </select>
+        <div class="city">
+          <div>
+            <h3>New York</h3>
+            <div class="date">August 15th 2022</div>
+          </div>
+          <div class="time">1:48:15 <small>AM</small></div>
+        </div>
+        <div class="city">
+          <div>
+            <h3>London</h3>
+            <div class="date">August 15th 2022</div>
+          </div>
+          <div class="time">1:48:15 <small>AM</small></div>
+        </div>
       </div>
-      <div class="city">
-        <h3>London</h3>
-        <div class="date">August 15th 2022</div>
-        <div class="time">1:48:15 AM</div>
-      </div>
+      <footer>
+        Code by
+        <a
+          href="https://www.shecodes.io/graduates/86602-cassie-sichmeller"
+          target="_blank"
+        >
+          Cassie Sichmeller</a
+        >
+        and is open sourced on
+        <a
+          href="https://github.com/CodeCassie4169E1/worldclock"
+          target="_blank"
+        >
+          GitHub</a
+        >
+      </footer>
     </div>
-    <footer>
-      Coded by
-      <a
-        href="https://www.shecodes.io/graduates/86602-cassie-sichmeller"
-        target="_blank"
-      >
-        Cassie Sichmeller</a
-      >
-      and is open sourced on
-      <a href="https://github.com/CodeCassie4169E1/worldclock" target="_blank">
-        GitHub</a
-      >
-    </footer>
-
     <script src="app.js"></script>
   </body>
 </html>

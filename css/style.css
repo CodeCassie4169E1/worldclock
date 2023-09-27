@@ -1,3 +1,37 @@
 body {
-  background-color: bisque;
+  background-color: #f9f7fe;
+}
+h3 {
+  margin: 0;
+}
+.card {
+  max-width: 500px;
+  top: 30px;
+}
+.city {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dotted rgb(0, 0, 0, 0.2);
+}
+.city:last-child {
+  border: none;
+}
+.date {
+  font-weight: 500;
+  opacity: 0.8;
+}
+.time {
+  font-size: 30px;
+  font-weight: 700;
+}
+.time small {
+  font-size: 11px;
+  vertical-align: text-top;
+  opacity: 0.8;
+}
+footer {
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
 }
