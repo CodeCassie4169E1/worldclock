@@ -18,27 +18,33 @@
     <div class="container">
       <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
         <h1>World Clocks</h1>
-        <select class="form-select" aria-label="Default select example">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="city"
+        >
           <option selected>Select a city...</option>
           <option value="America/New_York">New York</option>
           <option value="Europe/London">London</option>
           <option value="Europe/Moscow">Moscow</option>
           <option value="Asia/Tokyo">Tokyo</option>
-          <option value="5">Current time</option>
+          <option value="current">Current time</option>
         </select>
-        <div class="city" id="target-city">
-          <div>
-            <h3>New York</h3>
-            <div class="date"></div>
+        <div id="cities">
+          <div class="city" id="target-city">
+            <div>
+              <h3>New York</h3>
+              <div class="date"></div>
+            </div>
+            <div class="time"></div>
           </div>
-          <div class="time"></div>
-        </div>
-        <div class="city" id="first-city">
-          <div>
-            <h3>London</h3>
-            <div class="date"></div>
+          <div class="city" id="first-city">
+            <div>
+              <h3>London</h3>
+              <div class="date"></div>
+            </div>
+            <div class="time"></div>
           </div>
-          <div class="time"></div>
         </div>
       </div>
       <footer>
