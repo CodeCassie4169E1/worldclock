@@ -5,7 +5,7 @@ function display() {
     let targetTimeElement = targetCityElement.querySelector(".time");
     let targetTime = moment().tz("America/New_York");
 
-    targetDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    targetDateElement.innerHTML = targetTime.format("MMMM Do YYYY");
     targetTimeElement.innerHTML = targetTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
@@ -16,8 +16,19 @@ function display() {
     let firstTimeElement = firstCityElement.querySelector(".time");
     let firstTime = moment().tz("Europe/London");
 
-    firstDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    firstDateElement.innerHTML = firstTime.format("MMMM Do YYYY");
     firstTimeElement.innerHTML = firstTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+  let secondCityElement = document.querySelector("#second-city");
+  if (secondCityElement) {
+    let secondDateElement = secondCityElement.querySelector(".date");
+    let secondTimeElement = secondCityElement.querySelector(".time");
+    let secondTime = moment().tz("Asia/Tokyo");
+
+    secondDateElement.innerHTML = secondTime.format("MMMM Do YYYY");
+    secondTimeElement.innerHTML = secondTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -39,10 +50,11 @@ function updateCities(event) {
           </div>
           <div class="time">${cityTime.format("h:mm:ss")}
             <small>${cityTime.format("A")}</small></div>
-        </div>`;
+        </div>
+        <a href="/">Start over</a>`;
 }
+
 display();
 setInterval(display, 1000);
-
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCities);
